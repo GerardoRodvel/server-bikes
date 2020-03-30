@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import indexRoutes from './routes/indexRoutes';
 import bikesRoutes from './routes/bikesRoutes';
+require('dotenv').config();
 
 class Server{
     public app: Application;
