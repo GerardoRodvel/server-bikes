@@ -1,0 +1,11 @@
+version: '3'
+services:
+    node-server:
+        build: .
+        volumes:
+            - '.:/node-server'
+            - /node-server/node_modules
+        ports:
+            - '3000:3000'
+
+        command: 'npm start'
